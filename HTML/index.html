@@ -1,0 +1,158 @@
+<!-- <!-- The <!DOCTYPE html> declaration defines that this document is an HTML5 document
+The <html> element is the root element of an HTML page
+The <head> element contains meta information about the HTML page
+The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+The <h1> element defines a large heading
+The <p> element defines a paragraph -->
+	<!-- HTML is Not Case Sensitive
+	The alt Attribute
+The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader.
+The lang Attribute
+You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
+The title Attribute
+The title attribute defines some extra information about an element.
+
+The value of the title attribute will be displayed as a tooltip when you mouse over the element:
+Single or Double Quotes?
+Double quotes around attribute values are the most common in HTML, but single quotes can also be used.
+
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<title>Document</title>
+ 	<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+</style>
+<style>
+body {
+  background-image: url('https://media.istockphoto.com/id/1300476665/photo/high-angle-view-asian-chinese-womans-hand-on-mobile-app-for-online-food-delivery-during.jpg?s=1024x1024&w=is&k=20&c=HrJt69vG-yNIvrz-olT5hCGW_untkYEogJRVoGJXkgg=');
+   background-size: cover;
+   background-size: 100% 100%;
+}
+</style>
+<style>
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+ </head>
+ <body>
+ 	<h2>200% wide HTML Table</h2>
+
+<table style="width:300%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+ <!-- 	Bigger Headings
+Each HTML heading has a default size. However, you can specify the size for any heading with the style attribute, using the CSS font-size property:
+  -->
+ 	<h1 style="font-size:100px;">Heading 1</h1>
+ 	<font style="color: red;" size="25px"> MY name is Shamim Sorkar</font>
+ 	<h1  style="background-color:powderblue;" style="font-size:300%;">This is a heading</h1>
+ 	<!-- Text Alignment
+The CSS text-align property defines the horizontal text alignment for an HTML element: -->
+<h1 style="text-align:center;">Centered Heading</h1>
+<p style="text-align:center;">Centered paragraph.</p>
+
+<!-- HTML Formatting Elements
+Formatting elements were designed to display special types of text:
+
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text -->
+<!-- 	HTML <mark> Element
+The HTML <mark> element defines text that should be marked or highlighted:
+<!-- 
+ HTML <address> for Contact Information
+The HTML <address> tag defines the contact information for the author/owner of a document or an article.
+
+The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+
+The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element -->
+	<!-- Border Color -->
+	<h1 style="border:2px solid Tomato;">Hello World</h1>
+<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+<h1 style="border:2px solid Violet;">Hello World</h1>
+
+<!-- 
+Link to External CSS -->
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+/*This example links to a style sheet located in the html folder on the current web site: */
+<link rel="stylesheet" href="/html/styles.css">
+/*This example links to a style sheet located in the same folder as the current page:*/
+<link rel="stylesheet" href="styles.css"> -->
+
+<!-- /*By default, links will appear as follows in all browsers:
+
+An unvisited link is underlined and blue
+A visited link is underlined and purple
+An active link is underlined and red*/
+
+/*HTML Links - The target Attribute*/
+/*_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window*/ -->
+<a href="https://www.w3schools.com" >Visit W3Schools!</a>
+<!-- HTML Links - Use an Image as a Link -->
+<a href="default.asp">
+<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+<!-- Button as a Link -->
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+<!-- Images in Another Folder -->
+<img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+<!-- Animated Images
+HTML allows animated GIFs: -->
+<img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+<!-- Image Floating -->
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+The image will float to the right of the text.</p>
+
+<p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+The image will float to the left of the text.</p>
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+<p style="background-image: url('https://images.unsplash.com/photo-1533450718592-29d45635f0a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8anBnfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');">
+	<!-- HTML <picture> Element -->
+		<!-- The HTML <picture> element allows you to display different pictures for different devices or screen sizes. -->
+			<!-- HTML Favicon -->
+			<!-- How To Add a Favicon in HTML
+You can use any image you like as your favicon. You can also create your own favicon on sites like https://www.favicon.cc. -->
+
+
+ </body>
+ </html>
