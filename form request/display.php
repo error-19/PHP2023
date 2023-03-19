@@ -9,7 +9,7 @@
 		if(isset($_REQUEST['name']) && isset($_REQUEST['email'])){
 			$name = $_REQUEST['name'];
 			$email = $_REQUEST['email'];
-			echo "<p>Name: $name</p>";
+		   echo "<p>Name: $name</p>";
 			echo "<p>Email: $email</p>";
 		}
 	?>
